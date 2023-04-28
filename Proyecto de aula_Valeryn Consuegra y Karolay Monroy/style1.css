@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300;1,400&display=swap');
+
+body{
+  font-family:'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #B37F87;
+}
+
+header{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background-color: #863A6F;
+  color: #fff;
+  margin: -18px;
+  padding: -34px;
+  border-radius: 13px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.centrado {
+    text-align: center;
+  }
+
+  .rectan {
+    background-color: #fff ;
+    padding: 10px;
+    border-radius: 20px;
+    padding-block-end: 33px;
+  }
+
+  .rectan h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .rectan1{
+    background-color:  #fff ;
+    padding: 10px;
+    border-radius: 20px;
+    padding-block-end: 33px;
+
+  }
+
+  .rectan1 h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .rectan2 {
+    background-color:  #fff ;
+    padding: 10px;
+    border-radius: 20px;
+    padding-block-end: 62px;
+  }
+
+  .rectan2 h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+
+  #evidencia{
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 17px;
+
+  }
+
+  nav {
+    background-color: #975C8D;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-flex;
+  }
+  
+  nav ul li a {
+    color: #f3f3f3;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+   ul li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+   }
+   .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .card{
+  display: flex;
+  flex-wrap: wrap;
+   position: relative;
+   width: 300px;
+   height: 350px; 
+   align-items: center;
+   justify-content: center;
+  }
+
+  #carta1,#carta2,#carta3,#carta4,#carta5 {
+    display: inline-block;
+    border: 74px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+
+  #carta4, #carta5{
+    margin-top: 50px;
+  }
+
+  .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .card .font{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  }
+
+  .card .font img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+  }
+
+  .card .font h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0, 0, 4); 
+    text-align: center;
+   }
+
+   .card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+   }
+
+   .card .back .link a{
+   color: #f3f3f3;
+   }
+
+   .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(3, 35, 54) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+   }
+
+.card .back p{
+  letter-spacing: 1px;
+}
+
+.card:hover .font{
+  transform: perspective(600px) rotateX(180deg);
+}
+
+.card:hover .back{
+  transform: perspective(600px) rotateX(360deg);
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+.video{
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+}
+
+#an{
+  font-size: 30px;
+}
+
+
+#evi{
+  font-size: 30px;
+}
+
+#in{
+  font-size: 30px;
+}
